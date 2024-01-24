@@ -28,19 +28,22 @@ function mintNFT (_name,_eyeColor,_shirtType,_bling) {
 // and print their metadata with console.log()
 function listNFTs () {
     for(let i=0;i<NFTs.length;i++){
-        console.log(NFTs[i].name);
-        console.log(NFTs[i].eyecolor);
-        console.log(NFTs[i].shirtType);
-        console.log(NFTs[i].bling);
+        console.log("NFT detail",(i+1));
+        console.log("Name:" + NFTs[i].name);
+        console.log("eyecolor:" + NFTs[i].eyecolor);
+        console.log("Shirt Type:" + NFTs[i].shirtType);
+        console.log("Bling:" + NFTs[i].bling);
     }
 }
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-    console.log(NFTs.length);
+    console.log("Total Supply:" + NFTs.length);
 }
 
 // call your functions below this line
 mintNFT("Bob","red","hoodie","gold");
+mintNFT("Rob","Green","hoodie","silver");
+mintNFT("Sob","Blue","hoodie","bronze");
 listNFTs();
 getTotalSupply();
